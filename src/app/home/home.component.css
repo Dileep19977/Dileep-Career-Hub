@@ -1,0 +1,78 @@
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+.card-body {
+  padding: 20px;
+}
+.card-title {
+  color: #333;
+  margin-bottom: 10px;
+}
+.card-text {
+  color: #666;
+  font-size: 16px;
+}
+.card-footer {
+  background-color: #f8f9fa;
+  color: #666;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+.text-body-secondary {
+  color: #666 !important;
+}
+/* List group */
+.custom-list-group {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.custom-list-group .list-group-item {
+  background-color: #fff;
+  color: #343a40;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-list-group .list-group-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Scrollspy */
+.custom-scrollspy {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.custom-scrollspy h4 {
+  margin-top: 20px;
+  color: #343a40;
+}
+
+.custom-scrollspy p {
+  margin-bottom: 20px;
+  color: #6c757d;
+}
