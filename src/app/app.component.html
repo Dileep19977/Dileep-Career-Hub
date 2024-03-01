@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
+    <div class="logo-circle">
+      <img src="https://i.ibb.co/LnwpfYG/DILEEP-CAREER.png" alt="DILEEP-CAREER" class="logo-img">
+    </div>
     <a class="navbar-brand" href="#">Dileep's Career Hub</a>
     <button
       class="navbar-toggler"
@@ -67,3 +70,8 @@
 
 <app-child [announceLst]="announceList" (accOutput)="addItem($event)"></app-child> -->
 <router-outlet></router-outlet>
+<footer class="footer bg-dark text-white">
+  <div class="container py-3">
+    <p class="text-center text-white">&copy; 2024 Dileep. All rights reserved.</p>
+  </div>
+</footer>

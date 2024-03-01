@@ -2,6 +2,24 @@ p {
   font-family: Lato;
 }
 
+.logo-circle {
+  width: 40px; /* Adjust the width and height to your preference */
+  height: 40px;
+  border-radius: 50%; /* Makes the div a circle */
+  overflow: hidden; /* Ensures the image stays within the circle */
+  margin-right: 10px; /* Adjust the margin to your preference */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff; /* Add a border to the circle */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for a premium look */
+}
+
+.logo-img {
+  width: 100%; /* Ensures the image fills the circle */
+  height: auto;
+}
+
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

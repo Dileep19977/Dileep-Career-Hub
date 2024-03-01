@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  selectedSection: string = 'Front End Technologies';
+
   skills: any[] = [
     { title: 'HTML', description: 'Semantic markup, forms, and accessibility' },
     { title: 'CSS', description: 'Flexbox, Grid, animations, and preprocessors' },
@@ -24,5 +26,7 @@ export class HomeComponent implements OnInit {
     
   }
 
-
+  selectSection(section: string) {
+    this.selectedSection = section;
+  }
 }

@@ -4,58 +4,435 @@
     <div class="card-body">
       <h5 class="card-title">Exploring New Opportunities</h5>
       <p class="card-text">
-        Presently seeking Java Full Stack Developer positions to efficiently work
-        with clients.
+        Presently seeking Java Full Stack Developer positions to efficiently
+        work with clients.
       </p>
     </div>
     <div class="card-footer text-body-secondary">2 days ago</div>
   </div>
 </div>
-<div style="margin:20px">
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        About Me
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+<div style="margin: 20px;">
+  <div id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          About Me
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Hello! I'm a Java Full Stack Developer adept in Java, Angular, Spring, and Spring Boot, with hands-on experience in cloud services like AWS, Azure, and GCP. From designing scalable architectures to deploying robust applications, I ensure seamless integration with cloud platforms for optimal performance and reliability. Additionally, my expertise extends to working with databases such as MongoDB, PostgreSQL, Oracle, and Microsoft SQL. Whether it's managing complex data structures or optimizing database performance, I excel in leveraging these technologies to drive efficiency and innovation. Passionate about delivering cutting-edge solutions, I thrive on collaborating with cross-functional teams to exceed project goals. Let's embark on a journey of innovation and success together!</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
+
+
 <div style="margin:20px">
-  <div class="accordion" id="accordionExample">
+  <div id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Skills
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="false"
+          aria-controls="collapseOne"
+        >
+          Technical Skills
         </button>
       </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        data-bs-parent="#accordionExample"
+      >
         <div class="accordion-body">
           <div class="row">
             <div class="col-4">
               <div id="list-example" class="list-group custom-list-group">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-1" [class.active]="selectedSection === 'Front End Technologies'" (click)="selectSection('Front End Technologies')">Front End</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2" [class.active]="selectedSection === 'Back End Technologies'" (click)="selectSection('Back End Technologies')">Back End</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3" [class.active]="selectedSection === 'Cloud Services'" (click)="selectSection('Cloud Services')">Cloud Services</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4" [class.active]="selectedSection === 'Databases'" (click)="selectSection('Databases')">Databases</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-5" [class.active]="selectedSection === 'Others'" (click)="selectSection('Others')">Others</a>
               </div>
             </div>
             <div class="col-8">
-              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example custom-scrollspy" tabindex="0">
-                <h4 id="list-item-1">Item 1</h4>
-                <p>...</p>
-                <h4 id="list-item-2">Item 2</h4>
-                <p>...</p>
-                <h4 id="list-item-3">Item 3</h4>
-                <p>...</p>
-                <h4 id="list-item-4">Item 4</h4>
-                <p>...</p>
+              <div
+                data-bs-spy="scroll"
+                data-bs-target="#list-example"
+                data-bs-offset="0"
+                class="scrollspy-example custom-scrollspy"
+                tabindex="0"
+              >
+                <h4 id="list-item-1">Front End Technologies</h4>
+                <ul>
+                  <li>
+                    <strong>Angular:</strong> Familiarity with Angular framework
+                    for building robust single-page applications (SPAs) and
+                    knowledge of Angular CLI and Angular Material.
+                  </li>
+                  <li>
+                    <strong>HTML5:</strong> Proficient in semantic markup and
+                    creating well-structured, accessible web pages.
+                  </li>
+                  <li>
+                    <strong>CSS3:</strong> Strong understanding of CSS
+                    fundamentals including layout, specificity, and responsive
+                    design principles.
+                  </li>
+                  <li>
+                    <strong>JavaScript (ES6+):</strong> Extensive experience in
+                    modern JavaScript development, including asynchronous
+                    programming, DOM manipulation, and ES6 features.
+                  </li>
+                  <li>
+                    <strong>React.js:</strong> Proficient in building dynamic
+                    user interfaces with React.js, including state management
+                    with Redux or Context API.
+                  </li>
+                  <li>
+                    <strong>Responsive Web Design:</strong> Skilled in creating
+                    responsive layouts using CSS frameworks like Bootstrap or
+                    Flexbox/Grid.
+                  </li>
+                  <li>
+                    <strong>Frontend Build Tools:</strong> Proficient in using
+                    task runners (e.g., Gulp, Grunt) and module bundlers (e.g.,
+                    Webpack) for optimizing and automating frontend development
+                    workflows.
+                  </li>
+                  <li>
+                    <strong>Version Control:</strong> Familiar with Git for
+                    version control, including branching, merging, and working
+                    collaboratively in a team environment.
+                  </li>
+                  <li>
+                    <strong>Web Performance Optimization:</strong> Knowledge of
+                    techniques to improve website performance, such as lazy
+                    loading, code splitting, and minimizing render-blocking
+                    resources.
+                  </li>
+                  <li>
+                    <strong>Cross-browser Compatibility:</strong> Ability to
+                    identify and resolve cross-browser compatibility issues to
+                    ensure consistent user experience across different browsers.
+                  </li>
+                  <li>
+                    <strong>Debugging and Testing:</strong> Proficient in using
+                    browser developer tools for debugging and experience with
+                    frontend testing frameworks like Jest, Mocha, or Jasmine.
+                  </li>
+                  <li>
+                    <strong>Web Accessibility:</strong> Understanding of WCAG
+                    guidelines and experience in implementing accessible designs
+                    to ensure inclusivity for all users.
+                  </li>
+                  <li>
+                    <strong>UI/UX Design Principles:</strong> Familiarity with
+                    UI/UX design principles and ability to collaborate
+                    effectively with designers to create intuitive and visually
+                    appealing user interfaces.
+                  </li>
+                </ul>
+                <h4 id="list-item-2">Back End Technologies</h4>
+                <ul>
+                  <li>
+                    <strong>Core Java:</strong> Strong understanding of Java
+                    fundamentals including object-oriented programming concepts,
+                    data structures, and algorithms.
+                  </li>
+                  <li>
+                    <strong>Java EE:</strong> Experience in developing
+                    enterprise applications using Java EE technologies such as
+                    Servlets, JSP, JPA, and EJB.
+                  </li>
+                  <li>
+                    <strong>Concurrency:</strong> Knowledge of Java concurrency
+                    utilities and multithreading concepts.
+                  </li>
+                  <li>
+                    <strong>Spring Framework:</strong> Proficient in using the
+                    Spring Framework for building enterprise Java applications,
+                    including dependency injection, aspect-oriented programming
+                    (AOP), and Spring MVC.
+                  </li>
+                  <li>
+                    <strong>Spring Boot:</strong> Experience in developing
+                    microservices and standalone applications using Spring Boot,
+                    including auto-configuration, embedded servers, and Spring
+                    Boot Actuator for monitoring and managing applications.
+                  </li>
+                  <li>
+                    <strong>Spring Data:</strong> Familiarity with Spring Data
+                    for simplifying database access and working with various
+                    data stores such as relational databases, NoSQL databases,
+                    and Redis.
+                  </li>
+                  <li>
+                    <strong>Spring Security:</strong> Knowledge of Spring
+                    Security for authentication, authorization, and securing web
+                    applications and RESTful APIs.
+                  </li>
+                  <li>
+                    <strong>Spring Batch:</strong> Experience in batch
+                    processing with Spring Batch for handling large-scale data
+                    processing tasks, including job scheduling, chunk-based
+                    processing, and retry mechanisms.
+                  </li>
+                  <li>
+                    <strong>Spring Integration:</strong> Familiarity with Spring
+                    Integration for building message-driven and event-driven
+                    architectures, including integration with messaging systems
+                    like Apache Kafka and RabbitMQ.
+                  </li>
+                  <li>
+                    <strong>Quarkus:</strong> Experience with Quarkus, a
+                    Kubernetes-native Java framework, for building lightweight
+                    and fast-booting applications with features like
+                    ahead-of-time (AOT) compilation, reactive programming, and
+                    native image generation.
+                  </li>
+                  <li>
+                    <strong>Jakarta EE:</strong> Proficient in Jakarta EE
+                    (formerly Java EE) for developing enterprise-grade
+                    applications, including Jakarta Servlets, Jakarta Server
+                    Faces (JSF), Jakarta Persistence (JPA), and Jakarta
+                    Messaging (JMS).
+                  </li>
+                  <li>
+                    <strong>Microservices Architecture:</strong> Understanding
+                    of microservices architecture principles and experience in
+                    designing, implementing, and deploying microservices-based
+                    applications.
+                  </li>
+                  <li>
+                    <strong>RESTful APIs:</strong> Experience in designing and
+                    implementing RESTful APIs using frameworks like Spring MVC,
+                    Spring Boot, and JAX-RS.
+                  </li>
+                  <li>
+                    <strong>Message Brokers:</strong> Knowledge of message
+                    broker systems such as Apache Kafka and RabbitMQ for
+                    building event-driven architectures and asynchronous
+                    communication between services.
+                  </li>
+                  <li>
+                    <strong>Containerization:</strong> Experience with
+                    containerization technologies like Docker for packaging
+                    applications and Kubernetes for orchestrating containerized
+                    workloads in a production environment.
+                  </li>
+                </ul>
+                <h4 id="list-item-3">Cloud Services</h4>
+                <ul>
+                  <li>
+                    <strong>Amazon Web Services (AWS):</strong> Experience in
+                    deploying and managing applications on AWS cloud
+                    infrastructure, including EC2 (Elastic Compute Cloud), S3
+                    (Simple Storage Service), RDS (Relational Database Service),
+                    Lambda, and IAM (Identity and Access Management).
+                  </li>
+                  <li>
+                    <strong>Google Cloud Platform (GCP):</strong> Familiarity
+                    with GCP services such as Compute Engine, Google Kubernetes
+                    Engine (GKE), Cloud Storage, Cloud SQL, Cloud Functions, and
+                    Identity & Access Management (IAM).
+                  </li>
+                  <li>
+                    <strong>Microsoft Azure:</strong> Proficient in utilizing
+                    Azure cloud services, including Azure Virtual Machines,
+                    Azure Blob Storage, Azure SQL Database, Azure Functions, and
+                    Azure Active Directory.
+                  </li>
+                  <li>
+                    <strong>Infrastructure as a Service (IaaS):</strong>
+                    Understanding of IaaS concepts and experience in
+                    provisioning virtual machines, storage, and networking
+                    resources on cloud platforms.
+                  </li>
+                  <li>
+                    <strong>Platform as a Service (PaaS):</strong> Knowledge of
+                    PaaS offerings for building, deploying, and managing
+                    applications without the complexity of infrastructure
+                    management, including managed databases, serverless
+                    computing, and application hosting platforms.
+                  </li>
+                  <li>
+                    <strong>Containers and Orchestration:</strong> Experience
+                    with containerization technologies like Docker and container
+                    orchestration platforms such as Kubernetes for managing
+                    containerized applications in a cloud-native environment.
+                  </li>
+                  <li>
+                    <strong>Serverless Computing:</strong> Understanding of
+                    serverless computing concepts and experience in building
+                    serverless applications using AWS Lambda, Google Cloud
+                    Functions, or Azure Functions.
+                  </li>
+                  <li>
+                    <strong>Cloud Security:</strong> Knowledge of cloud security
+                    best practices and experience in implementing security
+                    controls, identity management, and data encryption to
+                    protect cloud resources and applications.
+                  </li>
+                  <li>
+                    <strong>Cloud Monitoring and Management:</strong>
+                    Familiarity with cloud monitoring and management tools for
+                    monitoring resource utilization, performance, and
+                    availability of cloud services, as well as automating
+                    infrastructure provisioning and configuration management
+                    tasks.
+                  </li>
+                  <li>
+                    <strong
+                      >DevOps and Continuous Integration/Continuous Deployment
+                      (CI/CD):</strong
+                    >
+                    Experience in implementing CI/CD pipelines for automated
+                    application deployment and integration with cloud-native
+                    development workflows using tools like AWS CodePipeline,
+                    Google Cloud Build, and Azure DevOps.
+                  </li>
+                  <li>
+                    <strong>Cost Management:</strong> Understanding of cloud
+                    cost management principles and experience in optimizing
+                    cloud resource usage, monitoring costs, and implementing
+                    cost-saving strategies to maximize return on investment
+                    (ROI).
+                  </li>
+                </ul>
+                <h4 id="list-item-4">Databases</h4>
+                <ul>
+                  <li>
+                    <strong>PostgreSQL:</strong> Experience in designing and
+                    managing relational databases using PostgreSQL, including
+                    schema design, data modeling, querying with SQL, and
+                    performance optimization.
+                  </li>
+                  <li>
+                    <strong>Oracle Database:</strong> Proficient in Oracle
+                    Database administration and development, including database
+                    installation, configuration, backup and recovery, PL/SQL
+                    programming, and performance tuning.
+                  </li>
+                  <li>
+                    <strong>MongoDB:</strong> Familiarity with NoSQL databases
+                    like MongoDB for building scalable and flexible data storage
+                    solutions, including document-based data modeling, indexing,
+                    replication, and sharding.
+                  </li>
+                  <li>
+                    <strong>Microsoft SQL Server:</strong> Experience in working
+                    with Microsoft SQL Server databases, including database
+                    administration tasks, T-SQL programming, stored procedures,
+                    triggers, and database security management.
+                  </li>
+                  <li>
+                    <strong>Relational Databases:</strong> Understanding of
+                    relational database concepts such as normalization,
+                    transactions, ACID properties, and relational algebra, and
+                    experience in working with various relational database
+                    management systems (RDBMS).
+                  </li>
+                  <li>
+                    <strong>NoSQL Databases:</strong> Knowledge of NoSQL
+                    database technologies and experience in using
+                    document-oriented, key-value, and column-family databases
+                    for handling unstructured and semi-structured data.
+                  </li>
+                  <li>
+                    <strong>Database Performance Optimization:</strong>
+                    Experience in optimizing database performance through query
+                    optimization, indexing strategies, database partitioning,
+                    and caching mechanisms to improve query execution times and
+                    resource utilization.
+                  </li>
+                  <li>
+                    <strong>Data Replication and High Availability:</strong>
+                    Familiarity with database replication techniques and high
+                    availability solutions such as master-slave replication,
+                    multi-master replication, failover clustering, and database
+                    mirroring.
+                  </li>
+                  <li>
+                    <strong>Database Security:</strong> Knowledge of database
+                    security best practices and experience in implementing
+                    authentication, authorization, encryption, and auditing
+                    controls to protect sensitive data and comply with
+                    regulatory requirements.
+                  </li>
+                  <li>
+                    <strong>Data Warehousing and Business Intelligence:</strong>
+                    Understanding of data warehousing concepts and experience in
+                    designing, building, and maintaining data warehouses and BI
+                    solutions using database technologies like PostgreSQL,
+                    Oracle, or SQL Server along with BI tools like Tableau,
+                    Power BI, or QlikView.
+                  </li>
+                  <li>
+                    <strong>Database Migration and Integration:</strong>
+                    Experience in database migration projects involving data
+                    migration between different database platforms, schema
+                    mapping, data transformation, and integration with other
+                    systems.
+                  </li>
+                </ul>
+                <h4 id="list-item-5">Others</h4>
+                <ul>
+                  <li>
+                    <strong>Scrum:</strong> Proficient in Scrum framework for
+                    iterative and incremental software development, including
+                    roles (Scrum Master, Product Owner, Development Team),
+                    ceremonies (Sprint Planning, Daily Standups, Sprint Review,
+                    Sprint Retrospective), and artifacts (Product Backlog,
+                    Sprint Backlog, Increment).
+                  </li>
+                  <li>
+                    <strong>Kanban:</strong> Experience in using Kanban
+                    methodology for visualizing workflow, limiting work in
+                    progress (WIP), and continuous delivery of value, including
+                    Kanban boards, work item types, and metrics like cycle time
+                    and lead time.
+                  </li>
+                  <li>
+                    <strong>Agile Principles:</strong> Understanding of Agile
+                    Manifesto and its principles, such as customer collaboration
+                    over contract negotiation, responding to change over
+                    following a plan, delivering working software frequently,
+                    and embracing change.
+                  </li>
+                  <li>
+                    <strong>Lean Software Development:</strong> Familiarity with
+                    Lean principles and practices for optimizing efficiency and
+                    reducing waste in software development processes, including
+                    value stream mapping, continuous improvement, and
+                    eliminating bottlenecks.
+                  </li>
+                  <li>
+                    <strong>Extreme Programming (XP):</strong> Knowledge of XP
+                    practices such as test-driven development (TDD), pair
+                    programming, continuous integration, collective code
+                    ownership, and frequent small releases for improving
+                    software quality and responsiveness to customer feedback.
+                  </li>
+                  <li>
+                    <strong>Agile Estimation and Planning:</strong> Experience
+                    in Agile estimation techniques like Planning Poker, relative
+                    estimation, and story points, as well as Agile planning
+                    practices such as release planning, iteration planning, and
+                    backlog grooming.
+                  </li>
+                  <li>
+                    <strong>Agile Metrics and Reporting:</strong> Understanding
+                    of Agile metrics for measuring team performance, project
+                    progress, and product quality, including burndown charts,
+                    velocity, cumulative flow diagrams, and defect rates.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -63,5 +440,4 @@
       </div>
     </div>
   </div>
-  </div>
-
+</div>

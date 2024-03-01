@@ -39,12 +39,17 @@
 .text-body-secondary {
   color: #666 !important;
 }
-/* List group */
+
 .custom-list-group {
   background-color: #f8f9fa;
   border: 1px solid #dee2e6;
   border-radius: 10px;
   padding: 10px;
+}
+
+.custom-list-group .list-group-item.active {
+  background-color: #007bff;
+  color: #fff;
 }
 
 .custom-list-group .list-group-item {
@@ -57,10 +62,11 @@
 }
 
 .custom-list-group .list-group-item:hover {
-  background-color: #f0f0f0;
+  background-color: #007bff;
+  color: #fff;
 }
 
-/* Scrollspy */
+
 .custom-scrollspy {
   max-height: 400px;
   overflow-y: auto;
@@ -76,3 +82,78 @@
   margin-bottom: 20px;
   color: #6c757d;
 }
+
+/* Custom accordion styles */
+.accordion-button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #0056b3;
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+/* Collapse icon */
+.accordion-button::after {
+  content: '\002B';
+  font-size: 24px;
+  float: right;
+}
+
+.collapsed::after {
+  content: '\2212';
+}
+
+/* Hover effect on collapse icon */
+.accordion-button:hover::after {
+  color: #fff;
+}
+
+/* Custom accordion body styles */
+.accordion-body {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 0 0 0.25rem 0.25rem;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Add animation to accordion body */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.accordion-body {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
